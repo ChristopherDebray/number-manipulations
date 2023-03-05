@@ -1,35 +1,74 @@
-function add(numberOne, numberTwo) {
-    return numberOne + numberTwo;
+// Returns the sum of two numbers
+function add(num1, num2) {
+    return num1 + num2;
 }
 
-function subtract(numberOne, numberTwo) {
-    return numberOne - numberTwo;
+// Returns the difference of two numbers
+function subtract(num1, num2) {
+    return num1 - num2;
 }
 
-function multiply(numberOne, numberTwo) {
-    return numberOne * numberTwo;
+// Returns the product of two numbers
+function multiply(num1, num2) {
+    return num1 * num2;
 }
 
-function divide(numberOne, numberTwo) {
-    if (b === 0) {
-        throw new Error("Cannot divide by zero.");
+// Returns the quotient of two numbers
+function divide(num1, num2) {
+    return num1 / num2;
+}
+
+// Rounds a number to the nearest integer
+function round(num) {
+    return Math.round(num);
+}
+
+// Rounds a number up to the nearest integer
+function ceil(num) {
+    return Math.ceil(num);
+}
+
+// Rounds a number down to the nearest integer
+function floor(num) {
+    return Math.floor(num);
+}
+
+// Raises a base to a power
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
+
+// Returns the factorial of a number
+function factorial(num) {
+    if (num === 0) {
+        return 1;
+    } else {
+        return num * factorial(num - 1);
     }
-    return numberOne / numberTwo;
 }
 
-function round(num, decimalPlaces = 0) {
-    const factor = Math.pow(10, decimalPlaces);
-    return Math.round(num * factor) / factor;
+// Returns the nth number in the Fibonacci sequence
+function fibonacci(n) {
+    if (n === 0) {
+        return 0;
+    } else if (n === 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 }
 
-function ceil(num, decimalPlaces = 0) {
-    const factor = Math.pow(10, decimalPlaces);
-    return Math.ceil(num * factor) / factor;
-}
-
-function floor(num, decimalPlaces = 0) {
-    const factor = Math.pow(10, decimalPlaces);
-    return Math.floor(num * factor) / factor;
+// Returns true if a number is prime, false otherwise
+function isPrime(num) {
+    if (num < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 module.exports = {
@@ -39,5 +78,9 @@ module.exports = {
     divide,
     round,
     ceil,
-    floor
+    floor,
+    power,
+    factorial,
+    fibonacci,
+    isPrime
 };
