@@ -1,36 +1,36 @@
 // Returns the sum of two numbers
-function add(num1, num2) {
-    return num1 + num2;
+function add(number1, number2) {
+    return number1 + number2;
 }
 
 // Returns the difference of two numbers
-function subtract(num1, num2) {
-    return num1 - num2;
+function subtract(number1, number2) {
+    return number1 - number2;
 }
 
 // Returns the product of two numbers
-function multiply(num1, num2) {
-    return num1 * num2;
+function multiply(number1, number2) {
+    return number1 * number2;
 }
 
 // Returns the quotient of two numbers
-function divide(num1, num2) {
-    return num1 / num2;
+function divide(number1, number2) {
+    return number1 / number2;
 }
 
 // Rounds a number to the nearest integer
-function round(num) {
-    return Math.round(num);
+function round(number) {
+    return Math.round(number);
 }
 
 // Rounds a number up to the nearest integer
-function ceil(num) {
-    return Math.ceil(num);
+function ceil(number) {
+    return Math.ceil(number);
 }
 
 // Rounds a number down to the nearest integer
-function floor(num) {
-    return Math.floor(num);
+function floor(number) {
+    return Math.floor(number);
 }
 
 // Raises a base to a power
@@ -39,11 +39,11 @@ function power(base, exponent) {
 }
 
 // Returns the factorial of a number
-function factorial(num) {
-    if (num === 0) {
+function factorial(number) {
+    if (number === 0) {
         return 1;
     } else {
-        return num * factorial(num - 1);
+        return number * factorial(number - 1);
     }
 }
 
@@ -59,12 +59,12 @@ function fibonacci(n) {
 }
 
 // Returns true if a number is prime, false otherwise
-function isPrime(num) {
-    if (num < 2) {
+function isPrime(number) {
+    if (number < 2) {
         return false;
     }
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
             return false;
         }
     }
