@@ -1,0 +1,15 @@
+{
+  "name": "number-manipulations",
+  "version": "1.0.0",
+  "description": "A collection of number manipulation functions.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "number",
+    "manipulation",
+    "math"
+  ],
+  "author": "Christopher Debray",
+  "license": "MIT"
+}

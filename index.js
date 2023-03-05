@@ -17,3 +17,9 @@ function divide(numberOne, numberTwo) {
     return numberOne / numberTwo;
 }
 
+module.exports = {
+    add,
+    subtract,
+    multiply,
+    divide
+};
